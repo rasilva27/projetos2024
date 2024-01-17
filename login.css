@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image:url(site.jpg);
+    background-repeat: calc(-200%);
+
+}
+.login{
+    background-image:  linear-gradient(-35deg,orange, blue, orange);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 90px;
+    border-radius: 10%;
+    color: aliceblue;
+}
+input{
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(45deg,skyblue, blue);
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    border: 2px solid;
+    display: inline-block;
+    padding: 10px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  a {
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+a:hover{
+    background-color: blue;
+}
+  
+  nav ul li:not(:last-child) {
+    border-right: 10px solid rgb(255, 255, 255);
+    border-radius: 15%;
+    padding: -15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  nav ul li:nth-child(4):hover {
+pointer-events: none;
+background-color: none;
+
+}
+a:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
